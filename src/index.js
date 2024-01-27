@@ -1,35 +1,42 @@
 let nome = "Carol";
 console.log(nome);
 
+CalculadoraHanke("Carol", 10)
+CalculadoraHanke("Ana", 50)
+CalculadoraHanke("Rodrigo", 80)
+CalculadoraHanke("Renata", 100)
+CalculadoraHanke("Pedro", 101)
 
-let nomeHeroi;
-let qtdExperiencia;
+function CalculadoraHanke(nomeHeroi, saldoVitoria){
 let nivel;
-let contador;
-for (contador = 0; contador < 3; contador++) {
- 
-qtdExperiencia = 10500;
-nomeHeroi = "Joao";
 
-if(qtdExperiencia <= 1000)
+for (let contador = 0; contador < 3; contador++) {
+ 
+if(saldoVitoria <= 10)
 {
  nivel = "Ferro";
-} else if(qtdExperiencia >= 1001 && qtdExperiencia <= 2000){
+ console.log(`O Herói numero  de vitoria ${saldoVitoria} está no nivel ${nivel}`);
+} else if(saldoVitoria >= 11 && saldoVitoria <= 20){
     nivel = "Bronze";
-}else if(qtdExperiencia >= 2001 && qtdExperiencia <= 5000){
+    console.log(`O Herói numero  de vitoria ${saldoVitoria} está no nivel ${nivel}`);
+}else if(saldoVitoria >= 21 && saldoVitoria <= 50){
     nivel = "Prata";
-}else if(qtdExperiencia >= 5001 && qtdExperiencia <= 7000){
+    console.log(`O Herói numero  de vitoria ${saldoVitoria} está no nivel ${nivel}`);
+}else if(saldoVitoria >= 51 && saldoVitoria <= 80){
     nivel = "Ouro";
-} else if(qtdExperiencia >= 7001 && qtdExperiencia <= 8000){
-    nivel = "Platina";
-}else if(qtdExperiencia >= 8001 && qtdExperiencia <= 9000){
-    nivel = "Ascedente";
-} else if(qtdExperiencia >= 9001 && qtdExperiencia <= 10000){
-    nivel = "Imoral";
+    console.log(`O Herói numero  de vitoria ${saldoVitoria} está no nivel ${nivel}`);
+} else if(saldoVitoria >= 81 && saldoVitoria <= 90){
+    nivel = "Diamante";
+    console.log(`O Herói numero  de vitoria ${saldoVitoria} está no nivel ${nivel}`);
+}else if(saldoVitoria >= 91 && saldoVitoria <= 100){
+    nivel = "Lendario";
+  
 }else 
 {
-    nivel = "Radiante";
+    nivel = "Imoral";
+    console.log(`O Herói numero  de vitoria ${saldoVitoria} está no nivel ${nivel}`);
+}
 }
 
-console.log(`O Herói de nome ${nomeHeroi} está no nivel ${nivel}`);
+
 }
